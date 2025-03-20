@@ -92,3 +92,37 @@ ips = hitung_ips(jumlah_mata_kuliah, nilai_mata_kuliah)
 # Menampilkan hasil
 print(f"Indeks Prestasi Semester (IPS) Anda adalah: {ips:.2f}")
 
+====================================================================================================
+X adalah seorang perantau yang ingin tinggal di Kota A dengan budget terbatas. Untuk bertahan di sana, X harus membayar biaya penginapan per malam. Namun, harga penginapan dan aturan menginap di Kota A cukup kompleks, sehingga X memutuskan untuk membuat simulasi agar bisa mengetahui berapa lama ia dapat bertahan sebelum kehabisan uang.
+
+Aturan Simulasi
+Harga awal penginapan sudah ditentukan sebelum perjalanan dimulai.
+Setiap malam, harga penginapan mendapat diskon 5% dari malam sebelumnya.
+Setiap 3 malam, harga penginapan reset ke harga awal.
+Jika saldo tidak cukup untuk membayar penginapan malam berikutnya, X dapat bekerja:
+Setiap jam kerja, X mendapatkan uang sebanyak 3.
+X dapat bekerja maksimal 3 jam dalam satu malam.
+Jika setelah bekerja saldo masih tidak cukup, X harus pulang.
+Jika X bekerja selama 2 hari berturut-turut, ia akan kelelahan dan harus pulang.
+Program harus mencetak progres tiap malam, termasuk:
+Saldo sebelum membayar.
+Harga penginapan malam itu.
+Proses kerja jika saldo tidak cukup.
+Sisa saldo setelah membayar.
+Parameter Fungsi
+Fungsi ini memiliki dua parameter:
+
+saldo (Integer) → jumlah uang yang dimiliki X saat memulai perjalanan.
+biaya_per_malam_awal (Integer) → harga penginapan per malam sebelum diskon berlaku.
+Aturan Output
+Program akan menampilkan progres setiap malam dengan format berikut:
+
+Malam ke-N:
+Saldo sebelum bayar
+Harga penginapan malam itu
+Jika saldo kurang:
+Jumlah jam kerja yang dilakukan
+Saldo setelah bekerja
+Jika setelah bekerja saldo masih kurang, X harus pulang
+Jika X bekerja selama 2 hari berturut-turut, ia harus pulang
+Jika berhasil menginap, sisa saldo setelah membayar
